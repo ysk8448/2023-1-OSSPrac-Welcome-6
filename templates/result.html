@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   
+  <head>
     <title>result page</title>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <form action="/delete-result" method="POST">
       <table border="1">
         <thead>
@@ -33,6 +30,13 @@
       </table>
       <button type="submit" value="Delete row">deleteRow</button>
     </form>
-    
+    <form action="/" method="GET">
+      <button type="submit" name="action" value="Add row">addRow</button>
+    </form>
+
+    <br />
+    <form action="/home" method="POST">
+      <button type="submit" name="action" value="Home">Home</button>
+    </form>
   </body>
 </html>

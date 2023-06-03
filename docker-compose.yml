@@ -4,5 +4,10 @@ services:
   nginx-app:
     image: ${DOCKER_USER_ID}/team_hw_6
     build: .
+
+
+  production:
+    image: ${DOCKER_USER_ID}/team_hw_6:${BUILD_NUMBER}
+    restart : always
     ports:
       - 80:80

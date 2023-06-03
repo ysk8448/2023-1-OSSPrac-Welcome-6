@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nginx-app:
-    image: ysk8448/myimage:3.0
+    image: ${DOCKER_USER_ID}/ysk8448/team_hw_6
     build: .
     ports:
       - 80:80
